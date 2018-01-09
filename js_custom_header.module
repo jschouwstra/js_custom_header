@@ -1,0 +1,12 @@
+<?php
+
+function js_fullwidth_theme($existing, $type, $theme, $path){
+    $items['js-fullwidth-block'] = array(
+        'variables' => array(
+            'HeaderText' => NULL,
+        ),
+        'path' => $path . '/templates',
+    );
+
+    return $items;
+}

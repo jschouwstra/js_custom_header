@@ -1,0 +1,7 @@
+name: JS custom header
+type: module
+description: '[version 0.1] Custom header by placing a Drupal block. '
+core: 8.x
+package: JS
+dependencies:
+  - block
