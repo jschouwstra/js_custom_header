@@ -1,0 +1,83 @@
+<style>
+
+*{
+    font-family: arial;
+}
+    /* Heading 1 style */
+    .custom_header,
+    .custom_header:after{
+        background-color: #333;
+    }
+    .custom_header {
+        position: relative;
+        line-height: 1;
+        font-size: 3em;
+        color: #fff;
+        display: inline;
+        white-space: pre-wrap;
+        /*margin: 1px;*/
+        border: 0 solid #333;
+        border-width: 0.25em 0; /* 0.25em is roughly equal to one space character. */
+    }
+
+
+    .custom_header:after {
+        content: "";
+        position: absolute;
+        top: -0.25em;
+        right: 100%;
+        bottom: -0.25em;
+        width: 0.25em;
+    }
+    .custom_header > span {
+        position: relative;
+        z-index: 1;
+
+    }
+
+    /* end Heading 1 style */
+
+    /* Heading 2 style */
+    .custom_header2,
+    .custom_header2:after{
+        background-color: #333;
+    }
+    .custom_header2 {
+        position: relative;
+        line-height: 1;
+        font-size: 1em;
+        color: #fff;
+        display: inline;
+        white-space: pre-wrap;
+        /*margin: 1px;*/
+        border: 0 solid #333;
+        border-width: 0.25em 0; /* 0.25em is roughly equal to one space character. */
+    }
+
+
+    .custom_header2:after {
+        content: "";
+        position: absolute;
+        top: -0.25em;
+        right: 100%;
+        bottom: -0.25em;
+        width: 0.25em;
+    }
+    .custom_header2 > span {
+        position: relative;
+        z-index: 1;
+
+    }
+
+
+    /* end Heading 2 style */
+
+</style>
+<p>
+    <span class="custom_header2" id="target"><span>Pellentesque </span></span>
+
+    <span class="custom_header" id="target"><span>Pellentesque habitant morbi tristique <br>senectus et netus et malesuada fames ac turpis egestas. </span></span>
+</p>
+
+
+{#{{ textValue }}#}
